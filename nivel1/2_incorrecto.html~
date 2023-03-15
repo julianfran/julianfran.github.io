@@ -1,0 +1,15 @@
+<!doctype html>
+
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+</head>
+<body background="fondo.jpg" style="background-repeat: no-repeat; background-color:#fefbda; background-position: center bottom; height: 700px"></body>
+<h1 style="color: #000000; text-align: center;">La respuesta es incorrecta</h1>
+<h2 style="color: #9a8742;  text-align: center;"><a href="2.html" style="text-decoration: none; color:#9a8742">¡Sigue intentando!</a></h2>
+<div style="text-align: center;">
+	<div style="background-image: url('../incorrecto.png');text-align: center;background-repeat: no-repeat; width: 250px; height: 205px; display: inline-block;"></div> 
+</div>
+</html>

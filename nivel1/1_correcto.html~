@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html lang="es">
+<style>
+a{
+color: #9a8742;
+text-decoration: none
+}
+</style>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+</head>
+<body background="../fondo.jpg" style="background-repeat: no-repeat; background-color:#fefbda; background-position: center bottom; height: 700px"></body>
+<h1 style="color: #000000; text-align: center;">¡Correcto!</h1>
+<h2 style="color: #9a8742;  text-align: center;">
+<script style="text-decoration: none; color:#9a8742";>
+var enlace = [
+"1.html", 
+"2.html", 
+"3.html",
+"4.html"];
+n = Math.floor(Math.random() * enlace.length);
+document.write("Sigue jugando".link(enlace[n]));
+
+</script>
+<div style="text-align: center;">
+	<div style="background-image: url('../correcto.png');margin-top: 30px;text-align: center;background-repeat: no-repeat; width: 250px; height: 205px; display:inline-block; ;"></div> 
+
+</div>
+	<audio autoplay src="correcto_sonido.mp3"></audio>
+</html>
