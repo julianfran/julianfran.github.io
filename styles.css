@@ -1,0 +1,346 @@
+* {
+    box-sizing: border-box !important;
+    margin: 0;
+    padding: 0 !important;
+    line-height: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #dbddc0 !important;
+}
+
+header {
+    background-color: #146863;
+    min-height: 130px;
+    color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px !important;
+    display: none
+}
+
+header h1 {
+    color: #f6efed !important;
+    font-size: 2rem !important;
+    text-align: center;
+}
+
+header h2 {
+    color: #dbddc0;
+    font-size: 1.5rem;
+}
+
+header p {
+    color: #f6efed;
+    font-size: 1.2rem;
+}
+
+main {
+    filter: blur(1);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px
+}
+
+#contenedorBienvenida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#bienvenida {
+    background-color: #146863;
+    width: 80%;
+    padding: 35px !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -100px
+}
+
+#bienvenida h1 {
+    color: #dbddc0;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#bienvenida p {
+    color: #ffffff;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-label {
+    max-width: 400px;
+}
+
+.form-control {
+    height: 50px;
+    padding: 0.375rem 0.75rem !important;
+}
+
+#contenedor {
+    /* min-width: 50%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 30px 0; */
+}
+
+#saludo {
+    padding: 15px !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0 30px 0;
+    font-family: 'Silkscreen', cursive;
+    background-image: url(./assets/marcador.png);
+    background-size: cover;
+    width: 300px;
+    height: 205px;
+}
+
+#saludo h2 {
+    color: #fdf91f;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    left: 35px;
+    top: 10px;
+    font-family: 'Silkscreen', cursive;
+}
+
+#saludo p {
+    color: #ffffff;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+#intentosYPuntaje p {
+    color: #f6efed;
+    font-size: 1.2rem;
+}
+
+#contenedorBilletes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px !important;
+    gap: 30px;
+    /* box-shadow: 2px 2px 10px #000; */
+}
+
+#opciones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+    gap: 30px;
+    align-items: self-start
+}
+
+#contenedorBilletes img {
+    height: 150px;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.7));
+
+}
+
+#opcion1,
+#opcion2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+}
+
+.iguales {
+    width: 300px;
+}
+
+.btn {
+    max-width: 250px;
+    padding: 8px !important;
+}
+
+.btn-success {
+    background-color: #146863 !important;
+    border-color: #146863 !important;
+    ;
+}
+
+.btn-success:hover {
+    background-color: #0e504b !important;
+}
+
+.btn-warning {
+    background-color: #222 !important;
+    border-color: #222 !important;
+    color: #fff !important
+}
+
+.btn-warning:hover {
+    background-color: #2c2c2c !important;
+}
+
+#correcto,
+#incorrecto {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    align-items: center;
+    background-color: #146863;
+    color: #f6efed;
+    padding: 35px !important;
+    margin: 100px 25px 25px 25px;
+}
+
+#juegoTerminado {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    align-items: center;
+    background-color: #146863;
+    color: #f6efed;
+    padding: 35px !important;
+    margin: -34px 25px 25px 25px;
+    position: relative;
+    z-index: 2;
+}
+#juegoTerminado p {
+    text-align: center;
+}
+
+#imgRespuesta {
+    position: relative;
+    top: -100px
+}
+
+#pRespuesta {
+    position: relative;
+    top: -50px;
+    text-align: center;
+}
+
+#imgJuegoTerminado {
+    height: 250px !important;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+@media (max-width: 660px) {
+    #bienvenida h1 {
+        font-size: 2.5rem;
+    }
+
+    #bienvenida {
+        margin-top: 200px;
+        width: 90%;
+    }
+
+    #bienvenida p {
+        font-size: 1.1rem;
+    }
+
+    #contenedorBilletes img {
+        height: 100px;
+    }
+
+    #opciones {
+        gap: 5px
+    }
+
+    #opcion1,
+    #opcion2 {
+        gap: 15px
+    }
+
+    #contenedorBilletes {
+        gap: 20px;
+        padding-top: 15px !important
+    }
+    #correcto,
+#incorrecto, #juegoTerminado{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+}
+
+@media (max-width: 377px) {
+    header{
+        min-height: 80px;
+    }
+    header h1{
+        display: none;
+    }
+    header p{
+        margin-bottom: 2px;
+    }
+    main{
+        margin-top:5px
+    }
+    #bienvenida h1 {
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.2rem !important;
+    }
+    #bienvenida {
+        margin-top: 100px;
+    }
+
+    #bienvenida p {
+        font-size: 1.1rem;
+    }
+
+    #contenedorBilletes img {
+        height: 80px;
+    }
+
+    #opciones {
+        gap: 5px;
+        margin-top:-20px
+    }
+
+    #opcion1,
+    #opcion2 {
+        gap: 15px
+    }
+    .btn{
+        height: 40px !important;
+font-size: 1rem !important;
+padding-top: 4px !important;
+    }
+
+    #contenedorBilletes {
+        gap: 20px;
+        padding-top: 0px !important
+    }
+    #imgJuegoTerminado{
+        height: 180px !important;
+    }
+}
